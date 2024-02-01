@@ -1,0 +1,46 @@
+@import '../../general/styles/variables.scss';
+
+.post-container {
+  position: relative;
+  width: 450px;
+  padding: 30px;
+  margin: 15px;
+  background-image: url('../../general/assets/PostBackground2.png');
+  background-size: cover;
+  background-position: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  border: 1.5px solid $black;
+  border-radius: $border-radius;
+  transition: height 0.3s ease;
+}
+.author-name {
+  font-size: larger;
+  color: $name-color;
+  font-weight: bold;
+}
+.comments-list-post-title {
+  font-size: 24px;
+}
+.comments-list-post-text {
+  font-weight: 600;
+}
+
+@media (max-width: #{$breakpoint-md}) {
+  .post-container {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+}
+@media (max-width: #{$breakpoint-sm}) {
+  .post-container {
+    padding: 10px;
+    margin: 10px;
+    height: auto;
+  }
+  .author-name {
+    font-size: small;
+  }
+}

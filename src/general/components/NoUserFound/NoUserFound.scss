@@ -1,0 +1,24 @@
+@import '../../styles/variables.scss';
+
+.no-users-container {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+}
+
+.no-users-image {
+  width: 100%;
+  height: 100%;
+}
+
+.no-users-text {
+  font-size: 30px;
+  color: $dark-gray;
+  position: absolute;
+  bottom: 90px;
+}

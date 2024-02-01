@@ -1,0 +1,65 @@
+@import '../../general/styles/variables.scss';
+
+.post-details-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../../general/assets/MainBackground.png');
+  flex-direction: row;
+}
+
+.post-details-container {
+  flex: 5;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+  padding: 10px;
+  background-position: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px $black;
+  height: 800px;
+  overflow-y: auto;
+  background-image: url('../../general/assets/PostBackground3.png');
+}
+.middle-page-title {
+  width: 40%;
+  text-align: center;
+}
+
+.middle-page-text {
+  width: 40%;
+}
+
+@media (max-width: #{$breakpoint-xl}) {
+  .post-details-modal {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: #{$breakpoint-lg}) {
+  .post-details-container {
+    margin: 50px;
+  }
+}
+
+@media (max-width: #{$breakpoint-md}) {
+  .post-details-container {
+    margin: 20px;
+  }
+}
+@media (max-width: #{$breakpoint-sm}) {
+  .middle-page-title {
+    font-size: small;
+  }
+  .middle-page-text {
+    font-size: smaller;
+  }
+}

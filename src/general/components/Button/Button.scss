@@ -1,0 +1,23 @@
+@import '../../styles/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Almendra&display=swap');
+
+.button {
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-family: 'Almendra', serif;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin: 5px;
+}
+
+.primary {
+  background-color: $antique;
+  color: $white;
+}
+
+.secondary {
+  background-color: $gray;
+  color: $white;
+}

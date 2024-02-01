@@ -1,0 +1,37 @@
+@import '../../../general/styles/variables.scss';
+
+.comments-container {
+  flex: 3;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  padding: 100px;
+  margin-top: 15px;
+  margin-right: 85px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px $black;
+  background-image: url('../../../general/assets/PostDetails.png');
+}
+.comments-loader {
+  position: absolute;
+  left: 40%;
+}
+
+.single-post-comments-scroll {
+  height: 600px;
+  overflow-y: auto;
+  scrollbar-color: $brown $light-brown;
+  scrollbar-width: thin;
+}
+
+@media (max-width: #{$breakpoint-xl}) {
+  .comments-container {
+    margin: 40px;
+  }
+}
+
+@media (max-width: #{$breakpoint-sm}) {
+  .comments-container {
+    padding: 70px;
+  }
+}

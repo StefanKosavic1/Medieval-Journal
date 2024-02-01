@@ -1,0 +1,25 @@
+@import '../../styles/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Almendra&display=swap');
+
+.title-background {
+  background-image: url('../../../general/assets/title.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+.medieval-title {
+  font-family: 'Almendra', serif;
+  font-size: 48px;
+  color: $antique;
+}
+
+@media (max-width: #{$breakpoint-lg}) {
+  .medieval-title {
+    font-size: 28px;
+  }
+}
