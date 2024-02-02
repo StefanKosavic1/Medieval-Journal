@@ -26,12 +26,13 @@
 
 @media (max-width: #{$breakpoint-xl}) {
   .comments-container {
-    margin: 40px;
+    margin: 20px;
+    padding: 0px 40px 60px 40px;
   }
 }
 
 @media (max-width: #{$breakpoint-sm}) {
   .comments-container {
-    padding: 70px;
+    padding: 0px 30px 50px 30px;
   }
 }
