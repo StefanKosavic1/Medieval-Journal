@@ -6,7 +6,7 @@ interface LoaderProps {
 }
 const Loader = ({ className }: LoaderProps) => {
   const combinedClassName = `loader ${className}`;
-  return <div className={combinedClassName} />;
+  return <div className={combinedClassName} data-testid="loader" />;
 };
 
 export default withHelloMessage(Loader);
