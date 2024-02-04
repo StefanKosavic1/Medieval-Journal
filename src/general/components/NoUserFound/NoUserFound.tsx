@@ -1,6 +1,6 @@
 import React from 'react';
 import './NoUserFound.scss';
-import NoUsers from '../../assets/NoUsers.png';
+import NoUsers from '../../../assets/NoUsers.webp';
 import withHelloMessage from '../../../hoc/withHelloMessage';
 
 const NoUserFound = () => {

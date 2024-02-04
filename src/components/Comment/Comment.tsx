@@ -1,6 +1,7 @@
 import React from 'react';
 import { CommentProps } from '../../models/comment';
 import withHelloMessage from '../../hoc/withHelloMessage';
+import './Comment.scss';
 
 const Comment: React.FC<CommentProps> = ({ name, email, body }) => {
   return (

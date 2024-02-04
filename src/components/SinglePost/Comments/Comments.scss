@@ -10,7 +10,7 @@
   margin-right: 85px;
   border-radius: 8px;
   box-shadow: 0 4px 6px $black;
-  background-image: url('../../../general/assets/PostDetails.png');
+  background-image: url('../../../assets/PostDetails.webp');
 }
 .comments-loader {
   position: absolute;
@@ -28,6 +28,9 @@
   .comments-container {
     margin: 20px;
     padding: 0px 40px 60px 40px;
+  }
+  .single-post-comments-scroll {
+    height: 400px;
   }
 }
 

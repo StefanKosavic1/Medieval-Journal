@@ -1,6 +1,6 @@
 import React, { ReactNode, Suspense } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import Loader from '../../components/Loader';
+import Loader from '../components/Loader';
 import Layout from '../components/Layouts/MainLayout';
 import { PostProvider } from '../../context/PostContext';
 import NotFound from '../../pages/NotFound';

@@ -1,7 +1,7 @@
-import React, { useCallback } from 'react';
+import { useCallback } from 'react';
 import useFetchData from '../../hooks/useFetchData';
 import { CommentProps } from '../../models/comment';
-import Loader from '../Loader';
+import Loader from '../../general/components/Loader';
 import Comment from '../Comment';
 import './CommentsList.scss';
 import { getCommentsById } from '../../general/api/services/comment';

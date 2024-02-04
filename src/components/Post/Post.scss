@@ -5,7 +5,7 @@
   width: 450px;
   padding: 30px;
   margin: 15px;
-  background-image: url('../../general/assets/PostBackground2.png');
+  background-image: url('../../assets/PostBackground2.webp');
   background-size: cover;
   background-position: center;
   background-size: 100% auto;
@@ -33,6 +33,16 @@
     flex-direction: column;
     justify-content: end;
   }
+  .comments-list-post-title {
+    margin: 0;
+  }
+  .comments-list-post-text {
+    margin: 10px 0px 0px 0px;
+  }
+
+  .author-name {
+    margin: 0;
+  }
 }
 @media (max-width: #{$breakpoint-sm}) {
   .post-container {
@@ -42,5 +52,8 @@
   }
   .author-name {
     font-size: small;
+  }
+  .comments-list-post-text {
+    margin: 0;
   }
 }

@@ -1,4 +1,4 @@
-import withHelloMessage from '../../hoc/withHelloMessage';
+import withHelloMessage from '../../../hoc/withHelloMessage';
 import './Loader.scss';
 
 interface LoaderProps {

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Loader from '../../components/Loader';
+import Loader from '../../general/components/Loader';
 import Post from '../../components/Post';
 import './PostsList.scss';
 import useUserPosts from './hooks/useUserPosts';

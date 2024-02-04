@@ -4,7 +4,7 @@ import { getCommentsById } from '../../../general/api/services/comment';
 import Title from '../../../general/components/Title';
 import useFetchData from '../../../hooks/useFetchData';
 import { CommentProps } from '../../../models/comment';
-import Loader from '../../Loader';
+import Loader from '../../../general/components/Loader';
 import Comment from '../../Comment';
 import './Comments.scss';
 import withHelloMessage from '../../../hoc/withHelloMessage';
@@ -20,7 +20,7 @@ function Comments() {
         <Loader className="comments-list-loader" />
       ) : (
         <div className="single-post-comments-scroll">
-          <Title text={'Comments'} />
+          <Title text="Comments" />
           {comments?.map((comment: JSX.IntrinsicAttributes & CommentProps) => (
             <Comment key={comment.id} {...comment} />
           ))}
